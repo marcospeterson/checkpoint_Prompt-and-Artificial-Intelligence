@@ -1,0 +1,30 @@
+{
+  "classificacao_sentimento": [
+    {
+      "input": "Adorei o produto.",
+      "output": "POSITIVO"
+    },
+    {
+      "input": "Péssima qualidade.",
+      "output": "NEGATIVO"
+    }
+  ],
+
+  "extracao_dados": [
+    {
+      "input": "Notebook Dell de R$3000 com teclado quebrado.",
+      "output": {
+        "produto": "Notebook Dell",
+        "preco": "R$3000",
+        "problema": "teclado quebrado"
+      }
+    }
+  ],
+
+  "resumo_reclamacao": [
+    {
+      "input": "Cliente relata atraso e atendimento ruim.",
+      "output": "Cliente insatisfeito com entrega e suporte."
+    }
+  ]
+}

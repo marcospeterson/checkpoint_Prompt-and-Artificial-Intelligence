@@ -1,0 +1,48 @@
+{
+  "classificacao_sentimento": [
+    {
+      "input": "Produto excelente, chegou antes do prazo.",
+      "esperado": "POSITIVO"
+    },
+    {
+      "input": "Veio quebrado e muito mal embalado.",
+      "esperado": "NEGATIVO"
+    },
+    {
+      "input": "Bom preço, mas qualidade mediana.",
+      "esperado": "MISTO"
+    },
+    {
+      "input": "Entrega dentro do prazo e ótimo atendimento.",
+      "esperado": "POSITIVO"
+    },
+    {
+      "input": "Não gostei do suporte da empresa.",
+      "esperado": "NEGATIVO"
+    }
+  ],
+  "extracao_dados": [
+    {
+      "input": "Notebook Lenovo de R$4200 com tela piscando.",
+      "esperado": {
+        "produto": "Notebook Lenovo",
+        "preco": "R$4200",
+        "problema": "tela piscando"
+      }
+    },
+    {
+      "input": "Mouse Logitech de R$150 parou de funcionar.",
+      "esperado": {
+        "produto": "Mouse Logitech",
+        "preco": "R$150",
+        "problema": "parou de funcionar"
+      }
+    }
+  ],
+  "resumo_reclamacao": [
+    {
+      "input": "Cliente reclama de atraso na entrega e falta de retorno do suporte.",
+      "esperado": "Cliente insatisfeito com atraso e suporte ineficiente."
+    }
+  ]
+}

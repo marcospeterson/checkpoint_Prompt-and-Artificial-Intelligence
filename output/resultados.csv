@@ -1,0 +1,5 @@
+﻿tarefa,tecnica,input,esperado,resposta,acuracia,tokens_prompt,tokens_resposta,tokens_totais,tempo_ms
+classificacao_sentimento,zero_shot,"Produto excelente, chegou antes do prazo.",POSITIVO, POSITIVO,True,75,3,78,22366.08
+classificacao_sentimento,few_shot,"Produto excelente, chegou antes do prazo.",POSITIVO, POSITIVO,True,116,3,119,15590.86
+classificacao_sentimento,chain_of_thought,"Produto excelente, chegou antes do prazo.",POSITIVO, POSITIVO,True,120,3,123,8769.71
+classificacao_sentimento,role_prompting,"Produto excelente, chegou antes do prazo.",POSITIVO, POSITIVO,True,75,3,78,14833.09
