@@ -4,3 +4,4 @@ matplotlib
 tiktoken
 numpy
 retry
+ollama

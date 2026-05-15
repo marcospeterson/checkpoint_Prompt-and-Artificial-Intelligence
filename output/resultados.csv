@@ -1,5 +1,47 @@
 ﻿tarefa,tecnica,input,esperado,resposta,acuracia,tokens_prompt,tokens_resposta,tokens_totais,tempo_ms
-classificacao_sentimento,zero_shot,"Produto excelente, chegou antes do prazo.",POSITIVO, POSITIVO,True,75,3,78,22366.08
-classificacao_sentimento,few_shot,"Produto excelente, chegou antes do prazo.",POSITIVO, POSITIVO,True,116,3,119,15590.86
-classificacao_sentimento,chain_of_thought,"Produto excelente, chegou antes do prazo.",POSITIVO, POSITIVO,True,120,3,123,8769.71
-classificacao_sentimento,role_prompting,"Produto excelente, chegou antes do prazo.",POSITIVO, POSITIVO,True,75,3,78,14833.09
+classificacao_sentimento,zero_shot,"Comprei o notebook há duas semanas. O desempenho é ótimo para estudos e jogos, mas a bateria descarrega muito rápido.",MISTO,MISTO,True,100,3,103,1549.53
+classificacao_sentimento,few_shot,"Comprei o notebook há duas semanas. O desempenho é ótimo para estudos e jogos, mas a bateria descarrega muito rápido.",MISTO,MISTO,True,141,3,144,1890.58
+classificacao_sentimento,chain_of_thought,"Comprei o notebook há duas semanas. O desempenho é ótimo para estudos e jogos, mas a bateria descarrega muito rápido.",MISTO,MISTO,True,145,3,148,1801.94
+classificacao_sentimento,role_prompting,"Comprei o notebook há duas semanas. O desempenho é ótimo para estudos e jogos, mas a bateria descarrega muito rápido.",MISTO,MISTO,True,100,3,103,1379.22
+classificacao_sentimento,zero_shot,A entrega atrasou mais de dez dias e o suporte não respondeu minhas mensagens. Experiência péssima.,NEGATIVO,NEGATIVO,True,94,3,97,1045.87
+classificacao_sentimento,few_shot,A entrega atrasou mais de dez dias e o suporte não respondeu minhas mensagens. Experiência péssima.,NEGATIVO,NEGATIVO,True,135,3,138,1566.11
+classificacao_sentimento,chain_of_thought,A entrega atrasou mais de dez dias e o suporte não respondeu minhas mensagens. Experiência péssima.,NEGATIVO,NEGATIVO,True,139,3,142,1778.38
+classificacao_sentimento,role_prompting,A entrega atrasou mais de dez dias e o suporte não respondeu minhas mensagens. Experiência péssima.,NEGATIVO,NEGATIVO,True,94,3,97,1320.6
+classificacao_sentimento,zero_shot,Produto chegou antes do prazo e muito bem embalado. Excelente atendimento da loja.,POSITIVO,POSITIVO,True,87,2,89,1508.72
+classificacao_sentimento,few_shot,Produto chegou antes do prazo e muito bem embalado. Excelente atendimento da loja.,POSITIVO,POSITIVO,True,128,2,130,1240.66
+classificacao_sentimento,chain_of_thought,Produto chegou antes do prazo e muito bem embalado. Excelente atendimento da loja.,POSITIVO,POSITIVO,True,132,2,134,1280.64
+classificacao_sentimento,role_prompting,Produto chegou antes do prazo e muito bem embalado. Excelente atendimento da loja.,POSITIVO,POSITIVO,True,87,2,89,1069.13
+classificacao_sentimento,zero_shot,"O celular possui boa câmera, porém começou a travar após a atualização do sistema.",MISTO,MISTO,True,87,3,90,1132.03
+classificacao_sentimento,few_shot,"O celular possui boa câmera, porém começou a travar após a atualização do sistema.",MISTO,MISTO,True,128,3,131,1279.14
+classificacao_sentimento,chain_of_thought,"O celular possui boa câmera, porém começou a travar após a atualização do sistema.",MISTO,MISTO,True,132,3,135,1251.31
+classificacao_sentimento,role_prompting,"O celular possui boa câmera, porém começou a travar após a atualização do sistema.",MISTO,MISTO,True,87,3,90,1321.18
+classificacao_sentimento,zero_shot,Gostei bastante da qualidade do produto e do cuidado na embalagem.,POSITIVO,POSITIVO,True,82,2,84,931.64
+classificacao_sentimento,few_shot,Gostei bastante da qualidade do produto e do cuidado na embalagem.,POSITIVO,POSITIVO,True,123,2,125,920.16
+classificacao_sentimento,chain_of_thought,Gostei bastante da qualidade do produto e do cuidado na embalagem.,POSITIVO,POSITIVO,True,127,2,129,1882.8
+classificacao_sentimento,role_prompting,Gostei bastante da qualidade do produto e do cuidado na embalagem.,POSITIVO,POSITIVO,True,82,2,84,2066.35
+extracao_dados,zero_shot,"Pedido #84521 realizado por Marcos Silva em 12/03/2026. Produto: Mouse Logitech G203. Valor total: R$189,90.","{'pedido': '84521', 'cliente': 'Marcos Silva', 'produto': 'Mouse Logitech G203', 'valor': 'R$189,90'}","```json
+{
+  ""produto"": ""Mouse Logitech G203"",
+  ""preco"": ""R$189,90"",
+  ""problema"": null
+}
+```",False,83,37,120,2200.57
+extracao_dados,few_shot,"Pedido #84521 realizado por Marcos Silva em 12/03/2026. Produto: Mouse Logitech G203. Valor total: R$189,90.","{'pedido': '84521', 'cliente': 'Marcos Silva', 'produto': 'Mouse Logitech G203', 'valor': 'R$189,90'}","{
+  ""produto"": ""Mouse Logitech G203"",
+  ""preco"": ""R$189,90"",
+  ""problema"": """"
+}",False,133,32,165,2859.49
+extracao_dados,chain_of_thought,"Pedido #84521 realizado por Marcos Silva em 12/03/2026. Produto: Mouse Logitech G203. Valor total: R$189,90.","{'pedido': '84521', 'cliente': 'Marcos Silva', 'produto': 'Mouse Logitech G203', 'valor': 'R$189,90'}","```json
+{
+  ""produto"": ""Mouse Logitech G203"",
+  ""preco"": ""R$189,90"",
+  ""problema"": null
+}
+```",False,124,37,161,1695.65
+extracao_dados,role_prompting,"Pedido #84521 realizado por Marcos Silva em 12/03/2026. Produto: Mouse Logitech G203. Valor total: R$189,90.","{'pedido': '84521', 'cliente': 'Marcos Silva', 'produto': 'Mouse Logitech G203', 'valor': 'R$189,90'}","```json
+{
+  ""produto"": ""Mouse Logitech G203"",
+  ""preco"": 189.90,
+  ""problema"": null
+}
+```",False,83,35,118,2982.24

@@ -1,48 +1,62 @@
 {
   "classificacao_sentimento": [
     {
-      "input": "Produto excelente, chegou antes do prazo.",
-      "esperado": "POSITIVO"
-    },
-    {
-      "input": "Veio quebrado e muito mal embalado.",
-      "esperado": "NEGATIVO"
-    },
-    {
-      "input": "Bom preço, mas qualidade mediana.",
+      "input": "Comprei o notebook há duas semanas. O desempenho é ótimo para estudos e jogos, mas a bateria descarrega muito rápido.",
       "esperado": "MISTO"
     },
     {
-      "input": "Entrega dentro do prazo e ótimo atendimento.",
+      "input": "A entrega atrasou mais de dez dias e o suporte não respondeu minhas mensagens. Experiência péssima.",
+      "esperado": "NEGATIVO"
+    },
+    {
+      "input": "Produto chegou antes do prazo e muito bem embalado. Excelente atendimento da loja.",
       "esperado": "POSITIVO"
     },
     {
-      "input": "Não gostei do suporte da empresa.",
-      "esperado": "NEGATIVO"
+      "input": "O celular possui boa câmera, porém começou a travar após a atualização do sistema.",
+      "esperado": "MISTO"
+    },
+    {
+      "input": "Gostei bastante da qualidade do produto e do cuidado na embalagem.",
+      "esperado": "POSITIVO"
     }
   ],
+
   "extracao_dados": [
     {
-      "input": "Notebook Lenovo de R$4200 com tela piscando.",
+      "input": "Pedido #84521 realizado por Marcos Silva em 12/03/2026. Produto: Mouse Logitech G203. Valor total: R$189,90.",
       "esperado": {
-        "produto": "Notebook Lenovo",
-        "preco": "R$4200",
-        "problema": "tela piscando"
+        "pedido": "84521",
+        "cliente": "Marcos Silva",
+        "produto": "Mouse Logitech G203",
+        "valor": "R$189,90"
       }
     },
     {
-      "input": "Mouse Logitech de R$150 parou de funcionar.",
+      "input": "Cliente Ana Souza relatou defeito no notebook Dell Inspiron comprado por R$4.500,00.",
       "esperado": {
-        "produto": "Mouse Logitech",
-        "preco": "R$150",
-        "problema": "parou de funcionar"
+        "cliente": "Ana Souza",
+        "produto": "notebook Dell Inspiron",
+        "valor": "R$4.500,00",
+        "problema": "defeito"
       }
-    }
-  ],
-  "resumo_reclamacao": [
+    },
     {
-      "input": "Cliente reclama de atraso na entrega e falta de retorno do suporte.",
-      "esperado": "Cliente insatisfeito com atraso e suporte ineficiente."
+      "input": "Pedido #77411 referente ao iPhone 15 Pro no valor de R$8.999,00 entregue com atraso.",
+      "esperado": {
+        "pedido": "77411",
+        "produto": "iPhone 15 Pro",
+        "valor": "R$8.999,00",
+        "problema": "atraso"
+      }
+    },
+    {
+      "input": "Carlos Henrique informou que o headset HyperX apresentou falha no áudio após dois dias de uso.",
+      "esperado": {
+        "cliente": "Carlos Henrique",
+        "produto": "headset HyperX",
+        "problema": "falha no áudio"
+      }
     }
   ]
 }

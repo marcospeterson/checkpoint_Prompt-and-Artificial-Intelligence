@@ -1,0 +1,13 @@
+{
+  "classificacao_sentimento": {
+    "descricao": "Templates para classificação de sentimento em reviews de clientes."
+  },
+
+  "extracao_dados": {
+    "descricao": "Templates para extração de informações de pedidos e mensagens."
+  },
+
+  "sumarizacao": {
+    "descricao": "Templates para sumarização de textos de atendimento."
+  }
+}
